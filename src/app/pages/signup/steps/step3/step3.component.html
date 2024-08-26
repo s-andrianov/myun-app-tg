@@ -1,0 +1,11 @@
+<div>
+    <h1>Когда месячные начались в прошлый раз?</h1>
+    <input type="date" [(ngModel)]="date" [disabled]="skip">
+    <label>
+      <input type="checkbox" [(ngModel)]="skip">
+      Пропустить
+    </label>
+    <button (click)="onContinue()">Продолжить</button>
+    <button (click)="router.navigate(['/signup/2'])">Назад</button>
+  </div>
+  

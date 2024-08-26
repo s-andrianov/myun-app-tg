@@ -1,0 +1,12 @@
+<div>
+    <h1>Сколько обычно длятся месячные?</h1>
+    <input type="range" min="1" max="20" [(ngModel)]="duration">
+    <label>Продолжительность: {{ duration }} дней</label>
+    <label>
+      <input type="checkbox" [(ngModel)]="skip">
+      Пропустить
+    </label>
+    <button (click)="onContinue()">Продолжить</button>
+    <button (click)="router.navigate(['/signup/3'])">Назад</button>
+  </div>
+  

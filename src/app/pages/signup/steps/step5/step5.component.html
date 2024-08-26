@@ -1,0 +1,12 @@
+<div>
+    <h1>Сколько обычно длится цикл?</h1>
+    <input type="range" min="10" max="90" [(ngModel)]="cycle">
+    <label>Длительность: {{ cycle }} дней</label>
+    <label>
+      <input type="checkbox" [(ngModel)]="skip">
+      Пропустить
+    </label>
+    <button (click)="onFinish()">Завершить</button>
+    <button (click)="router.navigate(['/signup/4'])">Назад</button>
+  </div>
+  
